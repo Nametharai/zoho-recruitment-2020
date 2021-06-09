@@ -1,0 +1,36 @@
+#include<conio.h>
+#include<string.h>
+#include<iostream.h>
+void main()
+{
+char str1[10],str2[10];
+int i,j,len,mid,s,len1;
+clrscr();
+cout<<"Enter the String"<<endl;
+cin>>str1;
+cout<<endl;
+len=strlen(str1);
+len1=len;
+mid=len/2;
+s=mid;
+for(i=0;i<=mid;i++)
+{
+str2[i]=str1[s];
+s++;
+}
+s=0;
+for(j=mid+1;j<len;j++)
+{
+str2[j]=str1[s];
+s++;
+}
+for(i=0;i<len1;i++)
+{
+for(j=0;j<=i;j++)
+{
+cout<<str2[j];
+}
+cout<<endl;
+}
+getch();
+}
